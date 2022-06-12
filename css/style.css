@@ -75,11 +75,6 @@ main {
   color: white;
 }
 
-/* .terminos {
-  color: white;
-  font-size: 13px;
-} */
-
 .contenedor-iconos {
   display: flex;
   list-style: none;
@@ -190,7 +185,6 @@ h2 {
   width: 50%;
   margin-bottom: 5rem;
   margin-top: 2rem;
-  /* height: 250px; */
   font-size: 18px;
   font-style: oblique;
   text-align: left;
@@ -275,6 +269,11 @@ h2 {
   padding: 1.6rem;
   color: white;
   background-color: black;
+}
+
+.texto:hover{
+  background: radial-gradient(circle, rgba(120,115,106,1) 0%, rgba(210,206,204,1) 56%, rgba(255,255,255,1) 100%);
+  color: black;
 }
 
 .productos {
@@ -400,6 +399,10 @@ h2 {
 .contenedor-contacto {
   display: flex;
   flex-direction: row;
+  background-image: url(../assets/fondo-contacto.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 .formulario h1 {
@@ -447,6 +450,7 @@ h2 {
   margin-left: 80px;
   border-radius: 10px;
 }
+
 
 /* responsive-mobile */
 
