@@ -4,33 +4,30 @@
   font-family: "Kurale", serif;
 }
 /* HEADER AND FOOTER */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  flex-direction: row;
-  background-color: black;
-  height: 10vh;
+
+.navbar{
+  background-color: #000000;
+  padding:0;
+  height: 5rem;
 }
 
 main {
   display: flex;
 }
 
-.logo img:hover {
-  transform: scale(1.5);
-  padding-bottom: 0px;
-  transition: 0.3s;
-}
 
 .logo img {
-  width: 6.8rem;
-  height: 6rem;
+  width: 3.9rem;
   margin-left: 3rem;
-  margin-top: 0.5rem;
-  padding-bottom: 1.5rem;
-  border-radius: 3rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  object-fit: cover; 
+}
+
+
+
+.navbar-collapse{
+  flex-grow: 0;
 }
 
 .contenedor-nav a:hover {
@@ -78,6 +75,7 @@ main {
 .contenedor-iconos {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .contenedor-iconos li {
@@ -112,8 +110,11 @@ main {
 }
 
 .contenedor-derecho img {
-  width: 12rem;
-  object-fit: cover;
+  margin-top: 3rem;
+  height: 7rem;
+  width: 11rem;
+  object-fit: contain;
+  
 }
 
 .derechos-reservados {
@@ -131,6 +132,7 @@ main {
   top: 22rem;
   left: 32rem;
   background-color: rgba(194, 194, 185, 0.5);
+  padding: 1rem;
   border-radius: 4rem;
   text-decoration: none;
   color: rgb(46, 45, 45);
@@ -162,17 +164,19 @@ h2 {
   width: 100%;
   height: 100%;
   flex-direction: column;
+  background: radial-gradient(circle, rgba(255,255,255,1) 24%, rgba(210,207,209,1) 79%);
 }
 
 .equipo {
   background-color: black;
   color: white;
   width: 100%;
-  height: 9rem;
+  height: 7rem;
   text-align: center;
   font-size: medium;
   font-style: italic;
   vertical-align: middle;
+  padding-top: 2rem;
   line-height: 9rem;
 }
 
@@ -183,37 +187,41 @@ h2 {
 
 .fg p {
   width: 50%;
-  margin-bottom: 5rem;
-  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-top: 10rem;
   font-size: 18px;
   font-style: oblique;
-  text-align: left;
+  text-align: justify;
   padding: 1.5rem;
   color: black;
   text-transform: inherit;
+
 }
 
 .contenedor-estudio {
   display: flex;
   flex-direction: row;
-  height: 7.5rem;
-  margin: 1rem;
-  margin-top: 4rem;
-}
-.contenedor-estudio img {
-  margin-inline: 0.3rem;
-  border-radius: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 2.5rem;
+  margin-left: .5rem;
+  margin-bottom: 5rem;
+  width: 50%;
 }
 
-.img-estudio-top {
-  margin-top: 2rem;
+.carousel-inner{
+  overflow: visible;
+}
+
+.contenedor-estudio img {
+  margin-inline: 0.3rem;
+  border-radius: .5rem;
+  margin: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .personal {
   display: flex;
   flex-direction: row;
-  height: 22rem;
+  height: 30rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 2rem;
@@ -222,11 +230,13 @@ h2 {
 .personal figure {
   padding: 1.2rem;
   width: 20%;
+  height: 22rem;
 }
 
 .personal figure img {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .personal figcaption {
@@ -248,32 +258,31 @@ h2 {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  background-color: white;
+  background: radial-gradient(circle, rgba(255,255,255,1) 24%, rgba(210,207,209,1) 79%);
+
 }
 
 .main-producto h1 {
   margin-bottom: 2rem;
-  text-decoration: underline;
+  padding: 1rem;
+  background-color: rgba(204, 203, 203, 0.329);
+  border-radius: 5rem ;
+  box-shadow: 2px 2px 4px black;
 }
 
 .texto {
   text-align: center;
   justify-content: center;
   width: 100%;
-  height: 3.8rem;
-  margin-top: 3.2rem;
+  height: 7rem;
   margin-bottom: 3.2rem;
   font-size: 20px;
   font-style: normal;
   text-align: center;
   padding: 1.6rem;
   color: white;
-  background-color: black;
-}
-
-.texto:hover{
-  background: radial-gradient(circle, rgba(120,115,106,1) 0%, rgba(210,206,204,1) 56%, rgba(255,255,255,1) 100%);
-  color: black;
+  background-color: #000000;
+  text-shadow: 2px 2px 4px gray;
 }
 
 .productos {
@@ -323,9 +332,11 @@ h2 {
   width: 12.5rem;
 }
 
-.metodos-de-pagos img {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.carousel-item-pagos{
+  object-fit: cover;
+
 }
+
 
 /* MAIN-TRABAJOS */
 
@@ -334,13 +345,16 @@ h2 {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  background-color: white;
+  background: radial-gradient(circle, rgba(255,255,255,1) 24%, rgba(210,207,209,1) 79%);
 }
 
 .main-trabajos h1 {
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  border-radius: 10px;
+  box-shadow: 1.95px 1.95px 2.6px  rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  padding: .5rem;
   background-color: rgba(172, 166, 166, 0.308);
+  font-size: 2.5rem;
+
 }
 
 .trabajos {
@@ -399,7 +413,7 @@ h2 {
 .contenedor-contacto {
   display: flex;
   flex-direction: row;
-  background-image: url(../assets/fondo-contacto.jpg);
+  background-image: url(../assets/fondo-contacto/1.jpg) ;
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -411,6 +425,7 @@ h2 {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   background-color: rgba(184, 181, 181, 0.384);
+
 }
 
 .formulario {
@@ -418,6 +433,9 @@ h2 {
   margin-left: 200px;
   margin-top: 150px;
   margin-bottom: 150px;
+  padding: 1rem;
+  background-color: rgba(206, 202, 202, 0.795);
+  box-shadow: 2px 2px 4px black;
 }
 
 .nombre-apellido input,
@@ -446,9 +464,12 @@ h2 {
 }
 
 .mapa iframe {
-  margin-top: 160px;
+  margin-top: 12rem;
   margin-left: 80px;
   border-radius: 10px;
+  background-color: rgba(206, 202, 202, 0.795);
+  box-shadow: 2px 2px 4px black;
+
 }
 
 
@@ -456,38 +477,34 @@ h2 {
 
 @media (max-width: 480px) {
   /* header-footer */
-  .header {
-    height: 45vh;
-    flex-direction: column;
-  }
 
-  .contenedor-nav {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
-  }
-
-  .contenedor-nav a {
-    font-size: 1rem;
-  }
-
-  .contenedor-nav li {
-    padding-bottom: 2.5rem;
+  .logo img {
+    width: 100%;
+    margin-left: 0rem;
+    border-radius: 0;
+    object-fit: cover;
+    padding-bottom: 0rem;
+    margin-top: 0;
   }
 
   .logo {
-    width: 30vw;
+    width: 13vw;
     overflow: hidden;
-    display: flex;
+    display: flex;  
+    margin-left: 1.5rem;
   }
 
-  .logo img {
-    height: 93%; 
-    width: 100%;
-    transform: scale(1.7);
-    margin-left: 0;
-    padding-bottom: 0;
-    margin-bottom: .5rem;
+  .contenedor-nav{
+    background-color: #474747be; 
+    z-index: 1;
+  }
+
+  .navbar {
+    height: 5rem;  
+  }
+
+  .navbar-toggler{
+    margin-top: 1.5rem;
   }
   
   .contenedor-footer {
@@ -513,7 +530,7 @@ h2 {
 
   .derechos-reservados {
     align-self: flex-end;
-    
+
   }
 
   .menu-footer {
@@ -528,16 +545,10 @@ h2 {
 
   /* main-index */
 
-  .contenedor-titulo h1 {
-    display: flex;
+   .contenedor-titulo h1 {
+    display: none;
   }
 
-  .contenedor-titulo h1 a {
-    top:60%;
-    left: 33%;
-    font-size: 1rem;
-    width: 10rem;
-  }
 
   /* main-nosotros */
 
@@ -547,26 +558,23 @@ h2 {
 
   .fg p {
     width:89%;
+    margin-top: -2rem;
     margin-bottom: 2rem;
-    margin-left: .1rem;
-    text-align:justify ; 
-    background-color: rgba(155, 155, 155, 0.281);  
+    margin-left: 1.5rem;
+    text-align:justify ;
+    background-color: rgba(155, 155, 155, 0.281);
   }
-  
+
   .contenedor-estudio {
     flex-direction: column;
     height: 100%;
     margin: 0;
     margin-top: -2rem;
+    width: 100%;
+    margin-left: -3rem;
+    z-index: 0;
   }
-
-  .contenedor-estudio img {
-    border-radius: 0;
-    padding-bottom: .3rem ;
-    width: 98%;
-    
-  }
-
+  
   .personal {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -577,21 +585,21 @@ h2 {
 
   .personal figure {
     padding: .5rem;
-    width: 94%; 
+    width: 94%;
     margin-left:0;
   }
 
 
   /* main-productos */
 
+  
   .texto {
     text-align: center;
     justify-content: center;
-    width: 89%;
-    height: 6rem;
+    height: 7rem;
     text-align: justify;
-    font-size: 18px; 
-    margin-top: 0; 
+    font-size: 15px;
+    margin-top: 0;
   }
 
   .productos {
@@ -599,39 +607,37 @@ h2 {
     grid-template-columns: repeat(2, 200px);
     grid-template-rows: repeat(6, 200px);
     height: 100%;
-    grid-row-gap: 5rem;
-    grid-column-gap: 1rem; 
-    margin-bottom: 3rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+    margin-bottom: 3rem; 
   }
 
   .imagen-producto img {
     height: 12rem;
     object-fit: cover;
+    
   }
+  
 
-  .metodos-de-pagos{
-    height: 14rem;
-    margin-top: -3rem;
+  .carousel-item-pagos img{
+    height: 19rem; 
     width: 100%;
   }
-
-  .metodos-de-pagos img {
-    object-fit: contain; 
-  }
+  
 
   /* main-trabajos */
 
   .trabajos {
     flex-direction: column;
   }
-  
+
   .trabajos video {
     margin-top: .1rem;
     margin-left: 0;
     width: 100%;
     height: 100%;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-   
+
   }
 
   .trabajos p {
@@ -659,16 +665,16 @@ h2 {
   .contenedor-contacto {
     flex-direction: column;
     width: 100%;
-    background-image: url(../assets/fondo-contacto.jpg);
+    background-image: url(../assets/fondo-contacto/1.jpg);
     background-position: center top;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    
+
   }
 
   .formulario {
     margin: 1.5rem;
-    background-color: rgba(235, 230, 230, 0.185);
+    background-color: rgba(235, 230, 230, 0.664);
   }
 
   .mapa iframe {
@@ -679,5 +685,5 @@ h2 {
 
 
 
-  
+
 }

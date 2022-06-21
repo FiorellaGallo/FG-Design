@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,31 +18,79 @@
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="header">
-            <a href="./index.html">
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="logo" width="100%" height="100%">
-                </div>
-            </a>
-            <!-- Menu de navegacion -->
-            <nav class="contenedor-nav">
-                <ul class="menu">
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./productos.html">Productos</a></li>
-                    <li><a href="./trabajos.html">Trabajos</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+   <!-- HEADER -->
+   <header>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg #000000">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <div class="logo">
+              <img src="./assets/logo.png" alt="logo" width="100%" height="100%">
+            </div>
+          </a>
+          <button class="navbar-toggler bg-white opacity-75" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white"></span>
+          </button>
+          <nav class="collapse navbar-collapse contenedor-nav " id="navbarSupportedContent">
+            <ul class="navbar-nav menu me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./trabajos.html">Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
     <!-- MAIN -->
     <main>
         <div class="main-nosotros">
             <div class="fg">
-                <p>
+              <div id="carouselExampleFade" class="carousel slide carousel-fade contenedor-estudio" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/imagenes-nosotros/imagen-1.png" class="d-block w-100" alt="edificio" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imagenes-nosotros/imagen-2.png" class="d-block w-100 " alt="lugar">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/imagenes-nosotros/imagen-3.png" class="d-block w-100" alt="diseno" >
+                  </div>
+                </div>
+                <button class="carousel-control-prev m-5" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+                <p class="wow animate__animated animate__fadeIn">
                     <span class="parrafo"> FG Design </span> es un estudio de interiorismo en Argentina
                     que cuenta con un equipo de sólidos profesionales, con amplios
                     conocimientos en arquitectura de interiores. Somos capaces de
@@ -50,42 +99,35 @@
                     <span class="parrafo">FG Design </span>oferecemos soluciones profesionales de arquitectura interior
                     para todo tipo de espacio adaptándonos a la economía del cliente.
                 </p>
-                <div class="contenedor-estudio">
-                    <img class="img-estudio-top animate__animated animate__rotateIn" src="./assets/imagenes-nosotros/imagen-1.jpg" alt="edificio" 
-                        width="100%" height="100%">
-                    <img src="./assets/imagenes-nosotros/imagen-2.jpg" class="wow animate__animated animate__rotateIn" alt="lugar" width="100%" height="100%">
-                    <img class="img-estudio-top wow animate__animated animate__rotateIn" src="./assets/imagenes-nosotros/imagen-3.jpg" alt="diseno"  width="100%"
-                        height="100%">
-                </div>
             </div>
-            <div class="equipo"><h1 class="wow animate__animated animate__heartBeat">Nuestro equipo</h1></div>
+            <div class="equipo"><h1 class="wow animate__animated animate__fadeInLeft">Nuestro equipo</h1></div>
             <div class="personal">
                 <figure >
-                    <img src="./assets/personal/imagen-1.jpg" class="wow animate__animated animate__slideInRight " alt="monica ramirez" width="100%" height="95%">
+                    <img src="./assets/personal/imagen-1.jpg" class="wow animate__animated animate__fadeInUp " alt="monica ramirez" width="100%" height="95%">
                     <figcaption>
                         <div class="text-bold">Monica Ramirez</div>CEO
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="./assets/personal/imagen-2.jpg" class="wow animate__animated animate__slideInRight" alt="josue" width="100%" height="95%">
+                    <img src="./assets/personal/imagen-2.jpg" class="wow animate__animated animate__fadeInUp" alt="josue" width="100%" height="100%">
                     <figcaption>
                         <div class="text-bold">Josue Di Carlo</div>Disenador de prototipo
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="./assets/personal/imagen-3.jpg" class="wow animate__animated animate__slideInRight" alt="yesica viraldes" width="100%" height="95%">
+                    <img src="./assets/personal/imagen-3.jpg" class="wow animate__animated animate__fadeInUp" alt="yesica viraldes" width="100%" height="100%">
                     <figcaption>
                         <div class="text-bold">Jesica Viraldes</div>Gerente de Diseno
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="./assets/personal/imagen-4.jpg" class="wow animate__animated animate__slideInRight" alt="Samuel Nakamura" width="100%" height="95%">
+                    <img src="./assets/personal/imagen-4.jpg" class="wow animate__animated animate__fadeInUp" alt="Samuel Nakamura" width="100%" height="100%">
                     <figcaption>
                         <div class="text-bold">Samuel Nakamura</div>Contador
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="./assets/personal/imagen-5.jpg" class="wow animate__animated animate__slideInRight" alt="sofia miranda" width="100%" height="95%">
+                    <img src="./assets/personal/imagen-5.jpg" class="wow animate__animated animate__fadeInUp" alt="sofia miranda" width="100%" height="100%">
                     <figcaption>
                         <div class="text-bold">Sofia Miranda</div>Encargada de Ventas
                     </figcaption>
@@ -131,7 +173,9 @@
     <script>
        new WOW().init();
     </script>
-    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+     crossorigin="anonymous"></script>
 </body>
 
 </html>
