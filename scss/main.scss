@@ -1,0 +1,29 @@
+
+
+// Global
+@import'./global/extend';
+@import'./global/mixins';
+@import './global/variables';
+@import './global/global';
+@import'./global/tipografias';
+
+
+
+// Layout y componentes
+@import './componentes/header';
+@import  './layout/index';
+@import'./layout/nosotros';
+@import'./layout/productos';
+@import'./layout/trabajos';
+@import'./layout/contacto';
+@import './componentes/footer';
+
+
+// Componentes-mobile
+@import'./componentes/header-mobile';
+@import'./layout/index-mobile';
+@import'./componentes/footer-mobile';
+@import'./layout/nosotros-mobile';
+@import'./layout/productos-mobile';
+@import'./layout/trabajos-mobile';
+@import'./layout/contacto-mobile';

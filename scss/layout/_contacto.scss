@@ -1,0 +1,75 @@
+.contenedor-contacto {
+    @extend%posicionAlineado;
+    background-image: url(../assets/fondo-contacto/1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    
+
+    .formulario {
+        display: inline-block;
+        margin-left: 200px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        padding: 1rem;
+        background-color: rgba(206, 202, 202, 0.795);
+        box-shadow: 2px 2px 4px $colorPrincipal;
+
+        h1 {
+            margin-bottom: 1.3rem;
+            font-size: x-large;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            background-color: rgba(184, 181, 181, 0.384);
+
+        }
+
+        .nombre-apellido {
+            input {
+                @extend%estiloInput;    
+            }
+        }
+
+        .email {
+            input {
+                @extend%estiloInput;
+            }    
+        } 
+        
+        .radio-botton{
+            span{
+                font-size: 12px;
+            }
+            input {
+                margin-bottom: 15px;
+            }
+        }
+
+        .comentario{
+            textarea {
+                width: 405px;
+                border: solid 3px rgba(0, 0, 0, 0.281);
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            }
+        }
+
+        .checkbox{
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .mapa{
+        iframe {
+            margin-top: 12rem;
+            margin-left: 80px;
+            border-radius: 10px;
+            background-color: rgba(206, 202, 202, 0.795);
+            box-shadow: 2px 2px 4px $colorPrincipal;
+        
+        }
+    }
+}
+

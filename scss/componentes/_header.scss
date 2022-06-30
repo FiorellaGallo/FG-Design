@@ -1,0 +1,35 @@
+.navbar {
+  background-color: $colorPrincipal;
+  padding: 0;
+  height: 5rem;
+
+  .logo {
+    img {
+      width: 3.9rem;
+      margin-left: 3rem;
+      padding-bottom: 1rem;
+      margin-top: 1rem;
+      object-fit: cover;
+    }
+  }
+
+  .contenedor-nav {
+    flex-grow: 0;
+
+    li {
+      display: inline-block;
+      padding: 5px 8px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: #bc6c25;
+        }
+      }
+    }
+  }
+}

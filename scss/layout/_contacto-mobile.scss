@@ -1,0 +1,16 @@
+@media (max-width: 480px) {
+    .contenedor-contacto {
+        flex-direction: column;
+        background-size: 100% 100%;
+    
+        .formulario {
+            margin: 1.5rem;   
+        }
+    
+        .mapa{
+            iframe {
+                display: none; 
+            }
+        }
+    }
+}    

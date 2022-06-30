@@ -1,0 +1,88 @@
+.contenedor-footer {
+  display: flex;
+  flex-direction: row;
+  background-color: $colorPrincipal;
+  height: 35vh;
+  justify-content: space-between;
+
+  .contenedor-izquierdo {
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 3.5rem;
+    margin-left: 6.5rem;
+
+    .contact {
+     
+      a {
+        color: $colorTipografia;
+        text-decoration: none;
+        font-size: 13px;
+
+        &:hover {
+          color: #bc6c25;
+        }
+      }
+    }
+
+    .terminos {
+      text-decoration: none;
+      font-size: 13px;
+      color: $colorTipografia;
+    }
+
+    .contenedor-iconos {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      
+
+      li {
+        height: 1.5rem;
+        margin: 0.8rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin-top: 1.5rem;
+    justify-content: space-around;
+
+    li {
+      a {
+        text-decoration: none;
+        font-size: 13px;
+        color: $colorTipografia;
+
+        &:hover {
+          color: #bc6c25;
+        }
+      }
+    }
+  }
+
+  .contenedor-derecho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      margin-top: 3rem;
+      height: 7rem;
+      width: 11rem;
+      object-fit: contain;
+    }
+
+    .derechos-reservados {
+      align-items: flex-end;
+      font-size: 11px;
+      color: $colorTipografia;
+      margin-right: 1rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.main-trabajos {
+    @extend%posicionColumna;
+    width: 100%;
+    align-items: center;
+    background:$colorFondo;
+    
+    .trabajos {
+        @extend%posicionAlineado;
+        width: 100%;
+
+        video {
+            margin-top: 6.3rem;
+            margin-left: 3.1rem;
+            width: 60%;
+            height: 60%;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 18px;
+            padding: 3.1rem;
+            padding-left: 6.3rem;
+            margin-top: 7.5rem;
+        }
+    }
+
+    h1 {
+        box-shadow: 1.95px 1.95px 2.6px  rgba(0, 0, 0, 0.15);
+        border-radius: 1rem;
+        padding: .5rem;
+        background-color: rgba(172, 166, 166, 0.308);
+        font-size: 2.5rem;
+    }
+
+    .img-trabajos {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: repeat(3, 200px);
+        height: 53.1rem;
+        grid-row-gap: 3.1rem;
+        grid-column-gap: 3.1rem;
+        align-items: center;
+        justify-items: center;
+        margin-top: 12.5rem;
+        margin-bottom: 1.2rem;
+
+        img {
+            width: 14.4rem;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+            &:hover {
+                transform: scale(1.5);
+                transition: 0.3s;
+            }
+        }
+
+        .img-bottom {
+            margin-bottom: 9.4rem;
+        }
+    }
+}
+  
+  
