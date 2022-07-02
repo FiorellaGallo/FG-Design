@@ -26,9 +26,11 @@
     }
 
     h1 {
+        display: flex;
+        justify-content: center;
         box-shadow: 1.95px 1.95px 2.6px  rgba(0, 0, 0, 0.15);
-        border-radius: 1rem;
-        padding: .5rem;
+        width: 100%;
+        padding: 1rem;
         font-size: 2.5rem;
         color: #414040;
         background-color: rgba(172, 166, 166, 0.308);
