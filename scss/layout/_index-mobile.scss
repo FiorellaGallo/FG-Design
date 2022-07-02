@@ -1,5 +1,19 @@
 @media (max-width: 480px) {
-    .contenedor-titulo h1 {
-        display: none;
+    .contenedor-titulo{
+        h1{
+            a{
+                position:fixed;
+                padding-top: 1rem;
+                padding-bottom: 3rem;
+                margin-top: 17.5rem;
+                border-radius: 0;
+                font-size: 14px;
+                width: 100%;
+                height: 5%;   
+                top: 0;
+                left: 0;  
+                z-index: 0;
+            }
+        }
     }
 }

@@ -49,13 +49,14 @@ main {
   top: 22rem;
   left: 32rem;
   background-color: rgba(194, 194, 185, 0.5);
-  padding: 1rem;
-  border-radius: 4rem;
+  padding: 2rem;
+  border-radius: 1rem;
   text-decoration: none;
   color: #2e2d2d;
   font-size: 20px;
   width: 20rem;
   text-align: center;
+  backdrop-filter: blur(10px);
   z-index: 1; }
   .contenedor-titulo h1 a:hover {
     background-color: rgba(255, 255, 255, 0.74);
@@ -63,11 +64,13 @@ main {
 
 .videoinicio {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: transparent; }
 
 .main-nosotros {
   width: 100%;
   height: 100%;
+  background: transparent;
   background: radial-gradient(circle, white 24%, #d2cfd1 79%); }
   .main-nosotros .fg .contenedor-estudio {
     margin: 2.5rem;
@@ -140,13 +143,20 @@ main {
     padding: 1.6rem;
     color: white;
     background-color: black;
-    text-shadow: 2px 2px 4px gray; }
+    text-shadow: 2px 2px 4px gray;
+    color: #d1d1d1;
+    background-color: #2d2d2d;
+    letter-spacing: .1rem;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636; }
   .main-producto h1 {
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: rgba(204, 203, 203, 0.329);
-    border-radius: 5rem;
-    box-shadow: 2px 2px 4px black; }
+    border-radius: 4rem;
+    box-shadow: 2px 2px 4px black;
+    color: #e0dfdc;
+    background-color: #333;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 22px 30px rgba(0, 0, 0, 0.9); }
   .main-producto .productos {
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -165,6 +175,7 @@ main {
         left: 0;
         width: 100%;
         height: 100%;
+        background: transparent;
         color: black;
         font-size: 20px;
         font-weight: bold;
@@ -173,7 +184,8 @@ main {
         align-items: center;
         justify-content: center;
         opacity: 0;
-        transition: opacity 0.5s; }
+        transition: opacity 0.5s;
+        z-index: 1; }
         .main-producto .productos .article-img .titulo-img:hover {
           opacity: 1;
           transition: opacity 0.5s; }
@@ -183,6 +195,16 @@ main {
         border-radius: 30px;
         height: 14rem;
         width: 12.5rem; }
+    .main-producto .productos .article-img:hover > .titulo-img {
+      opacity: 1;
+      transition: opacity 0.5s; }
+    .main-producto .productos .article-img:hover > .imagen-producto img {
+      margin: 1.3rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      border-radius: 30px;
+      height: 14rem;
+      width: 12.5rem;
+      filter: sepia(60%); }
 
 .main-trabajos {
   width: 100%;
@@ -206,8 +228,11 @@ main {
     box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
     padding: .5rem;
+    font-size: 2.5rem;
+    color: #414040;
     background-color: rgba(172, 166, 166, 0.308);
-    font-size: 2.5rem; }
+    letter-spacing: .1rem;
+    text-shadow: -1px -1px 1px #666565, 2px 2px 1px #929191; }
   .main-trabajos .img-trabajos {
     display: grid;
     grid-template-columns: repeat(4, 200px);
@@ -345,8 +370,18 @@ main {
     z-index: 1; } }
 
 @media (max-width: 480px) {
-  .contenedor-titulo h1 {
-    display: none; } }
+  .contenedor-titulo h1 a {
+    position: fixed;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-top: 17.5rem;
+    border-radius: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 5%;
+    top: 0;
+    left: 0;
+    z-index: 0; } }
 
 @media (max-width: 480px) {
   .contenedor-footer {
