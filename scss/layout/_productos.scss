@@ -31,7 +31,7 @@
     .contenedor-producto {
         @extend%posicionColumna;
         height: 55rem;
-        background-color: rgba(141, 140, 140, 0.219);
+        background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(195,193,193,1) 50%, rgba(245,245,245,1) 100%);
         margin-bottom: 3rem;
         border-radius: 3rem;
         

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Trabajos|FG</title>
 </head>
 
@@ -68,12 +69,12 @@
         <div class="main-trabajos">
             <div class="trabajos">
                 <video src="../assets/trabajos/video-trabajos.mp4" width="50%" height="50%" autoplay loop muted></video>
-                <p>Consigue un hogar con un gran estilo y diseño a través de nuestros servicios. Nos encargamos de todo
+                <p class="wow animate__animated animate__fadeIn animate__slower" >Consigue un hogar con un gran estilo y diseño a través de nuestros servicios. Nos encargamos de todo
                     lo
                     necesario para que tu reforma sea un éxito y no tengas que preocuparte por nada. Además de brindar
                     nuestro propios productos de decoración, contamos con acuerdos con los mejores proveedores.
             </div>
-            <h1>Nuestros trabajos</h1>
+            <h1 class="wow animate__animated animate__slideInLeft animate__delay-1s animate__slower">Nuestros trabajos</h1>
             <div class="img-trabajos">
                 <img src="../assets/trabajos/imagen-1.jpg" alt="living-1" width="100%" height="100%">
                 <img class="img-bottom" src="../assets/trabajos/imagen-2.jpg" alt="dormitorio-1" width="100%"
@@ -126,7 +127,11 @@
             </span>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
 </body>
