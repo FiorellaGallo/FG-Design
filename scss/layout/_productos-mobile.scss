@@ -23,12 +23,13 @@
 
             .productos {
                 display: grid;
-                grid-template-columns: repeat(2, 200px);
+                grid-template-columns: repeat(1, 100%);
                 grid-template-rows: repeat(6, 200px);
                 height: 100%;
                 grid-row-gap: 2rem;
                 grid-column-gap: 1rem;
                 margin-bottom: 3rem;
+                
 
                 .article-img {
                     .imagen-producto {
@@ -36,7 +37,8 @@
 
                         img {
                             object-fit: cover;
-                            height: 10rem;
+                            height: 10rem;    
+                            width: 14.5rem;                        
                         }
                     }
 
