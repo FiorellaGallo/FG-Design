@@ -1,13 +1,14 @@
 @media (max-width: 480px) {
 
     .navbar {
-        height: 5rem;
+        height: 4.5rem;
         
         .logo {
             width: 13vw;
             overflow: hidden;
             display: flex;
             margin-left: 1.5rem;
+        
     
             img {
                 width: 100%;
@@ -18,12 +19,11 @@
                 margin-top: 0;
             }
         }
+        
     }
 
-    
-
     .navbar-toggler {
-        margin-top: 1.5rem;
+       margin-top: 1.5rem;
     }
 
     .contenedor-nav {

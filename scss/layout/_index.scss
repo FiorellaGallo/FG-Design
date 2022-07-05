@@ -8,13 +8,14 @@
             top: 22rem;
             left: 32rem;
             background-color: rgba(194, 194, 185, 0.5);
-            padding: 1rem;
-            border-radius: 4rem;
+            padding: 2rem;
+            border-radius: 1rem;
             text-decoration: none;
             color: rgb(46, 45, 45);
             font-size: 20px;
             width: 20rem;
             text-align: center;
+            backdrop-filter: blur(10px);
             z-index: 1;
             
             &:hover{
@@ -29,6 +30,9 @@
     @include dimensiones(100%,100%);
 }
 
+.videomobile{
+    display: none;
+}
 
 
 

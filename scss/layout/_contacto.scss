@@ -42,9 +42,10 @@
             }
             input {
                 margin-bottom: 15px;
+                
             }
         }
-
+        
         .comentario{
             textarea {
                 width: 405px;
@@ -68,7 +69,6 @@
             border-radius: 10px;
             background-color: rgba(206, 202, 202, 0.795);
             box-shadow: 2px 2px 4px $colorPrincipal;
-        
         }
     }
 }
