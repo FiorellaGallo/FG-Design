@@ -6,7 +6,15 @@
         .formulario {
             margin: 1.5rem;   
         }
-    
+
+
+        .comentario{
+            textarea {
+                width: 84vw;
+               
+            }
+        }
+        
         .mapa{
             iframe {
                 display: none; 

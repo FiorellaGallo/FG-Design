@@ -1,0 +1,34 @@
+@media(max-width: 768px) {
+
+    .navbar {
+        height: 16vh;
+
+        .logo {
+            img {
+              margin-top: .2rem;
+             
+            }
+          }
+        
+    }
+
+    .contenedor-nav {
+        background-color: #474747be;
+        z-index: 1;
+        
+        
+    }
+
+    .contenedor-menu-icon{
+        width: 2rem;
+        height: 2rem;
+
+        .bi-list{
+            color: rgba(255, 255, 255, 0.761);
+            
+        }
+    }
+
+  
+
+}
