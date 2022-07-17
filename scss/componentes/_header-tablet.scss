@@ -1,7 +1,7 @@
-@media(max-width: 768px) {
+@media(min-width:481px) and (max-width: 768px) {
 
     .navbar {
-        height: 16vh;
+        height: 16.7vh;
 
         .logo {
             img {

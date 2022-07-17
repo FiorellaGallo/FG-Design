@@ -2,6 +2,7 @@
     .contenedor-footer {
         flex-direction: column;
         height: 100%;
+
         .contenedor-izquierdo {
             display: flex;
             align-items: center;
@@ -9,17 +10,25 @@
             padding-top: 2rem;
             align-items: center;
             font-size: 12px;
-        
+
             .contact {
                 a {
                     margin-top: .5rem;
-                    margin-bottom: 1rem;   
+                    margin-bottom: 1rem;
                 }
             }
 
             .terminos {
                 margin-top: .5rem;
                 margin-bottom: 0;
+            }
+
+            .contenedor-iconos {
+
+                li {
+                    height: 1.5rem;
+
+                }
             }
         }
 
@@ -39,7 +48,7 @@
 
             .derechos-reservados {
                 align-self: flex-end;
-                
+
             }
         }
     }
