@@ -355,7 +355,7 @@ main {
 
 @media (max-width: 480px) {
   .navbar {
-    height: 4.5rem; }
+    height: 4.1rem; }
     .navbar .logo {
       width: 13vw;
       overflow: hidden;
@@ -508,7 +508,7 @@ main {
     margin-top: 10rem;
     margin-bottom: 8rem; }
     .main-trabajos .img-trabajos img {
-      width: 28vh; } }
+      width: 24vh; } }
 
 @media (max-width: 480px) {
   .contenedor-contacto {
@@ -529,7 +529,7 @@ main {
 
 @media (min-width: 481px) and (max-width: 990px) {
   .navbar {
-    height: 16.7vh; }
+    height: 14.4vh; }
     .navbar .logo img {
       margin-top: .2rem; }
   .contenedor-nav {
@@ -590,8 +590,8 @@ main {
   .main-producto .texto {
     padding-left: 5rem;
     padding-right: 5rem;
-    height: 6.5rem;
-    font-size: 18px;
+    height: 24vh;
+    font-size: 16px;
     margin-bottom: 1rem; }
   .main-producto .contenedor-producto {
     width: 100%;
@@ -628,12 +628,12 @@ main {
     grid-template-columns: repeat(3, 25vh);
     grid-template-rows: repeat(4, 200px);
     height: 80rem;
-    grid-column-gap: 3rem;
+    grid-column-gap: .5rem;
     grid-row-gap: 9rem;
     margin-top: 10rem;
     margin-bottom: 8rem; }
     .main-trabajos .img-trabajos img {
-      width: 32vh; } }
+      width: 20vh; } }
 
 @media (min-width: 481px) and (max-width: 1024px) {
   .contenedor-contacto {
