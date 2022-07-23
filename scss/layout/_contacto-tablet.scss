@@ -1,26 +1,25 @@
-@media (max-width: 480px) {
+@media(min-width:481px) and (max-width: 1024px) {
     .contenedor-contacto {
-        flex-direction: column;
         background-size: 100% 100%;
     
         .formulario {
-            margin: 1.5rem;   
+            margin-left: 10rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
 
             .comentario{
                 textarea {
-                    width: 82vw;
+                    width: 100%;
                    
                 }
             }
-            
         }
-
-
 
         .mapa{
             iframe {
-                display: none; 
+                display: none;    
             }
         }
     }
-}    
+
+}

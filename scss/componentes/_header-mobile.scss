@@ -2,6 +2,7 @@
 
     .navbar {
         height: 4.5rem;
+       
         
         .logo {
             width: 13vw;
@@ -24,6 +25,16 @@
 
     .navbar-toggler {
        margin-top: 1.5rem;
+
+       .contenedor-menu-icon{
+        width: 2rem;
+        height: 2rem;
+
+            .bi-list{
+                color: rgba(255, 255, 255, 0.761);
+            
+            }
+        }
     }
 
     .contenedor-nav {

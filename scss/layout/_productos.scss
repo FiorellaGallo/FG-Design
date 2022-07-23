@@ -30,7 +30,7 @@
 
     .contenedor-producto {
         @extend%posicionColumna;
-        height: 55rem;
+        height: 70rem;
         background: linear-gradient(180deg, rgba(94,94,94,1) 0%, rgba(195,193,193,1) 50%, rgba(245,245,245,1) 100%);
         margin-bottom: 3rem;
         border-radius: 3rem;
@@ -52,8 +52,8 @@
 
         .productos {
             display: grid;
-            grid-template-columns: repeat(4, 200px);
-            grid-template-rows: repeat(3, 200px);
+            grid-template-columns: repeat(3, 30%);
+            grid-template-rows: repeat(4, 200px);
             height: 53.2rem;
             grid-row-gap: 3.2rem;
             grid-column-gap: 3.2rem;
@@ -95,8 +95,8 @@
                         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
                             rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                         border-radius: 30px;
-                        height: 14rem;
-                        width: 12.5rem;
+                        height: 34vh;
+                        width: 16vw;
                     }
                 }
 
