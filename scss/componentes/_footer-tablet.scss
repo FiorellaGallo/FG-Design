@@ -1,9 +1,9 @@
-@media(min-width:481px) and (max-width: 768px) {
+@media(min-width:481px) and (max-width: 1024px) {
     .contenedor-footer {
         .contenedor-izquierdo {
             align-items: flex-start;
             margin-left: 3rem;
-            margin-top: 2rem;
+            margin-top: 1rem;
             padding-top: 2rem;
 
 
@@ -44,14 +44,14 @@
                 display: flex;
                 justify-content: center;
                 img {
-                    margin-top: 2.5rem;
-                    height: 6rem;
+                    margin-top: 2rem;
+                    height:6rem;
                     width: 6rem;       
                 }
             }
             
             .derechos-reservados {
-                font-size: 10px;   
+                font-size: 9px;   
             }
         }
     }
